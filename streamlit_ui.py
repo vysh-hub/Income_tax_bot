@@ -15,8 +15,7 @@ except Exception as e:
     st.error(f"❌ ERROR: Failed to load data: {e}")
     st.stop()
 
-#  Set OpenAI API Key (Make sure it's set in your environment)
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = Your_API_KEY
 if not openai.api_key:
     st.error("❌ ERROR: OpenAI API Key is missing. Set it in your environment!")
     st.stop()
